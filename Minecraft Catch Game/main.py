@@ -1,7 +1,7 @@
 import pgzrun
 import time
-WIDTH = 800
-HEIGHT = 600
+WIDTH = 1000
+HEIGHT = 800
 
 start_time = time.time()
 current_time = 0
@@ -9,7 +9,8 @@ print(start_time)
 
 
 def draw():
-    screen.blit("bg1", (0,0))
+    screen.blit("bg1", (0, 0))
+    screen.blit("grass1000", (0, 750))
     screen.draw.text(f"{int(current_time)}", (10, 10))
 
 
